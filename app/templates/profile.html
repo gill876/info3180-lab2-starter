@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block main %}
+    <div id="profile-box">
+        <div id="first-half">
+            <div id="photo-section">
+                <img id="profile-pic" src="{{url_for('static', filename='img/profile001.jpeg') }}">
+            </div>
+            <div id="quick-info">
+                <h3>Cargill Seiveright</h3>
+                <h4>@gill876</h4>
+                <h4>Kingston, Jamaica</h4>
+            </div>
+        </div>
+        <div class="last-half">
+            <div class="description">
+            <p>Hello! I am Cargill Seiveright, a 2nd year Computer Science student who
+             enjoys learning different and new things that are relevant and interesting 
+             in Computer Science</p>
+            </div>
+            <div class="figures">
+                <div class="figure-info">
+                    <div class="figure-number">
+                        <p>7</p>
+                    </div>
+                    <div class="figure-annotation">
+                        <p>Posts</p>
+                    </div>
+                </div>
+                <div class="figure-info">
+                    <div class="figure-number">
+                        <p>100</p>
+                    </div>
+                    <div class="figure-annotation">
+                        <p>Following</p>
+                    </div>
+                </div>
+                <div class="figure-info">
+                    <div class="figure-number">
+                        <p>250</p>
+                    </div>
+                    <div class="figure-annotation">
+                        <p>Followers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="follow-botton">
+                <button>Follow</button>
+            </div>
+        </div>
+    </div>
+{% endblock main %}
